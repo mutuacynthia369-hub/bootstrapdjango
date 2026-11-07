@@ -1,0 +1,270 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add('js')</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &mdash; Fernhill Landscapes &amp; Gardens</title>
+  <meta name="description" content="Contact Fernhill Landscapes in Ashbury. Call the studio, send a message or visit us at 48 Orchard Lane. We work across the Wyndham Valley.">
+  <meta name="theme-color" content="#3d5a3b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%233d5a3b'/%3E%3Cpath d='M16 26V12m0 0c0-3 1-5 3-7m-3 17c-3 0-5-1-7-3m7 3c3 0 5-1 7-3m-7-1c-2.6 0-4.6-1-6-2.8m6 2.8c2.6 0 4.6-1 6-2.8' stroke='%23f3efe6' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'css/vendor/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl" aria-label="Primary">
+      <div class="container">
+        <a class="brand" href="{% url 'home' %}" aria-label="Fernhill Landscapes — home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V9"/><path d="M12 9c0-3 1-5 3-7"/><path d="M12 19c-2.5 0-4.5-1-6-3"/><path d="M12 19c2.5 0 4.5-1 6-3"/><path d="M12 15c-2.2 0-4-1-5.2-2.7"/><path d="M12 15c2.2 0 4-1 5.2-2.7"/><path d="M12 11.5c-1.8 0-3.2-.8-4.2-2.2"/><path d="M12 11.5c1.8 0 3.2-.8 4.2-2.2"/></svg></span>
+          <span>
+            <span class="brand-name">Fernhill</span>
+            <span class="brand-sub">Landscapes &amp; Gardens</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="primary-nav">
+          <ul class="navbar-nav nav-menu mx-auto">
+            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'lawn_care' %}">Lawn care</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#process">Process</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}" aria-current="page">Contact</a></li>
+          </ul>
+          <div class="nav-tools">
+            <a class="nav-phone" href="tel:+15035550142"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>(503) 555-0142</a>
+            <a class="btn btn-clay" href="{% url 'quote' %}">Request a consultation</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================ PAGE HERO ============================ -->
+    <section class="page-hero plan-paper" aria-labelledby="page-title">
+      <div class="container">
+        <ol class="crumbs" aria-label="Breadcrumb">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+        <h1 id="page-title">Come and <em>talk gardens</em></h1>
+        <p class="lead-text">Call the studio, send a message or drop by the yard on Orchard Lane, where you can see paving and stone samples laid out in full size.</p>
+      </div>
+    </section>
+
+    <section class="section-sm" aria-label="Ways to reach us">
+      <div class="container">
+        <div class="contact-cards">
+          <div class="c-card reveal">
+            <div class="tip-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <h2>Call</h2>
+            <p>Monday to Saturday. Ask for the studio for design, or the lawn desk for care plans.</p>
+            <a class="big" href="tel:+15035550142">(503) 555-0142</a>
+          </div>
+          <div class="c-card reveal d1">
+            <div class="tip-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div>
+            <h2>Email</h2>
+            <p>We answer within one working day. Photos of the garden help.</p>
+            <a class="big" href="mailto:hello@example.com">hello@example.com</a>
+          </div>
+          <div class="c-card reveal d2">
+            <div class="tip-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+            <h2>Visit</h2>
+            <p>Studio and materials yard, with parking for six cars by the gate.</p>
+            <span class="big text-body">48 Orchard Lane, Ashbury</span>
+            <button class="text-link border-0 bg-transparent p-0 mt-1 js-only align-self-start" type="button" data-copy="48 Orchard Lane, Ashbury">Copy address</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-4" aria-label="Message and service area">
+      <div class="container">
+        <div class="contact-layout">
+          <div>
+          <div class="form-panel">
+            <span class="eyebrow"><span class="tag-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>Send a message</span>
+            <h2 class="mb-4">How can we help?</h2>
+            <form data-validate data-contact novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label" for="c-name">Full name</label>
+                  <input class="form-control" type="text" id="c-name" name="name" autocomplete="name" placeholder="Alex Whitford" required aria-describedby="c-name-err">
+                  <span class="field-error" id="c-name-err">Please enter your name.</span>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="c-email">Email</label>
+                  <input class="form-control" type="email" id="c-email" name="email" autocomplete="email" placeholder="alex@example.com" required aria-describedby="c-email-err">
+                  <span class="field-error" id="c-email-err">Please enter a valid email address.</span>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="c-phone">Phone <span class="opt">(optional)</span></label>
+                  <input class="form-control" type="tel" id="c-phone" name="phone" autocomplete="tel" placeholder="(503) 555-0190">
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="c-topic">Topic</label>
+                  <select class="form-select" id="c-topic" name="topic" required aria-describedby="c-topic-err">
+                    <option value="">Choose a topic&hellip;</option>
+                    <option>New garden design</option>
+                    <option>Lawn care plan</option>
+                    <option>Seasonal maintenance</option>
+                    <option>A project we are working on</option>
+                    <option>Something else</option>
+                  </select>
+                  <span class="field-error" id="c-topic-err">Please choose a topic.</span>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="c-msg">Message</label>
+                  <textarea class="form-control" id="c-msg" name="message" rows="5" placeholder="We have a north-facing back garden of about 80 sq yd and would like&hellip;" required minlength="10" aria-describedby="c-msg-err"></textarea>
+                  <span class="field-error" id="c-msg-err">Please write a short message (at least 10 characters).</span>
+                </div>
+              </div>
+              <div class="form-foot">
+                <p>Template demo: messages are checked in the browser and not sent. Connect a form service to receive them.</p>
+                <button class="btn btn-clay" type="submit">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></button>
+              </div>
+            </form>
+            <div class="form-success" role="status" tabindex="-1" data-success></div>
+          </div>
+          <div class="gate-img reveal">
+            <img src="{% static 'img/contact-gate.jpg' %}" alt="Arched wooden garden door set into a tall clipped hedge" width="900" height="700" loading="lazy">
+          </div>
+          </div>
+
+          <div>
+            <div class="area-card contours">
+              <span class="eyebrow on-dark"><span class="tag-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>Where we work</span>
+              <h2>About 18 miles around the studio</h2>
+              <svg class="area-map" viewBox="0 -14 360 274" role="img" aria-label="Service area map: rings at 6, 12 and 18 miles around the Ashbury studio, covering Millbrook, Linden Rise, Hollins Cross, Westford, Beech Park, Old Mill and Wyndham">
+                <path d="M-10 190 C 60 160, 110 210, 170 170 S 290 120, 370 150" fill="none" stroke="#6f8a5c" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+                <g fill="none" stroke="#a9b79a" stroke-dasharray="3 6" stroke-width="1.3">
+                  <circle cx="180" cy="130" r="42" opacity=".9"/>
+                  <circle cx="180" cy="130" r="84" opacity=".6"/>
+                  <circle cx="180" cy="130" r="122" opacity=".4"/>
+                </g>
+                <g font-size="9" fill="#a9b79a" font-weight="600" letter-spacing="1">
+                  <text x="186" y="84">6 MI</text><text x="186" y="42">12 MI</text><text x="186" y="5" dy="0">18 MI</text>
+                </g>
+                <g fill="#f3efe6" font-size="11.5" font-weight="600">
+                  <circle cx="120" cy="104" r="4"/><text x="74" y="96">Millbrook</text>
+                  <circle cx="246" cy="96" r="4"/><text x="254" y="100">Linden Rise</text>
+                  <circle cx="226" cy="190" r="4"/><text x="234" y="194">Hollins Cross</text>
+                  <circle cx="84" cy="168" r="4"/><text x="40" y="186">Westford</text>
+                  <circle cx="160" cy="58" r="4"/><text x="104" y="54">Beech Park</text>
+                  <circle cx="290" cy="150" r="4"/><text x="298" y="154">Old Mill</text>
+                  <circle cx="132" cy="226" r="4"/><text x="140" y="236">Wyndham</text>
+                </g>
+                <g>
+                  <circle cx="180" cy="130" r="15" fill="#a94f28"/>
+                  <path d="M180 122v14m0-14c0-2 1-4 3-5m-3 13c-2 0-4-1-5-2.5m5 2.5c2 0 4-1 5-2.5m-5-1c-1.6 0-3-.7-4-2m4 2c1.6 0 3-.7 4-2" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                  <text x="200" y="134" fill="#e9b38f" font-size="12" font-weight="700">Ashbury studio</text>
+                </g>
+              </svg>
+              <ul class="towns">
+                <li>Ashbury</li><li>Millbrook</li><li>Linden Rise</li><li>Hollins Cross</li><li>Westford</li><li>Beech Park</li><li>Old Mill</li><li>Wyndham</li>
+              </ul>
+            </div>
+
+            <div class="hours-card">
+              <h2>Studio hours</h2>
+              <ul class="footer-hours" data-hours>
+              <li data-day="1"><span>Monday</span><span>7:30 &ndash; 5:30</span></li>
+              <li data-day="2"><span>Tuesday</span><span>7:30 &ndash; 5:30</span></li>
+              <li data-day="3"><span>Wednesday</span><span>7:30 &ndash; 5:30</span></li>
+              <li data-day="4"><span>Thursday</span><span>7:30 &ndash; 5:30</span></li>
+              <li data-day="5"><span>Friday</span><span>7:30 &ndash; 4:30</span></li>
+              <li data-day="6"><span>Saturday</span><span>9:00 &ndash; 1:00</span></li>
+              <li data-day="0"><span>Sunday</span><span>Closed</span></li>
+            </ul>
+              <p class="open-status" data-open-status><i aria-hidden="true"></i><span>Phone line open Monday to Saturday</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="{% url 'home' %}" aria-label="Fernhill Landscapes — home">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V9"/><path d="M12 9c0-3 1-5 3-7"/><path d="M12 19c-2.5 0-4.5-1-6-3"/><path d="M12 19c2.5 0 4.5-1 6-3"/><path d="M12 15c-2.2 0-4-1-5.2-2.7"/><path d="M12 15c2.2 0 4-1 5.2-2.7"/><path d="M12 11.5c-1.8 0-3.2-.8-4.2-2.2"/><path d="M12 11.5c1.8 0 3.2-.8 4.2-2.2"/></svg></span>
+            <span>
+              <span class="brand-name">Fernhill</span>
+              <span class="brand-sub">Landscapes &amp; Gardens</span>
+            </span>
+          </a>
+          <p class="footer-about">A garden design and build studio with its own lawn care crews, working across Ashbury and the Wyndham Valley since 2009. Licensed, insured and members of the Valley Landscape Guild.</p>
+          <div class="socials">
+            <a href="#" aria-label="Fernhill on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Fernhill on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5H14l.6-3.5h-3.1V7.6c0-.6.5-1.1 1.1-1.1H15z"/></svg></a>
+            <a href="#" aria-label="Fernhill on Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10.5 20.5 12.4 13"/><path d="M9.6 14.4C8.8 13.7 8.4 12.8 8.4 11.8c0-2.4 1.8-4.3 4.2-4.3 2.2 0 3.6 1.5 3.6 3.4 0 2.3-1.1 4-2.7 4-.9 0-1.5-.7-1.3-1.6l.7-2.6"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="{% url 'home' %}#services">Garden design</a></li>
+            <li><a href="{% url 'home' %}#services">Patios &amp; hardscaping</a></li>
+            <li><a href="{% url 'home' %}#services">Planting schemes</a></li>
+            <li><a href="{% url 'lawn_care' %}">Lawn care plans</a></li>
+            <li><a href="{% url 'home' %}#services">Seasonal maintenance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio</h3>
+          <ul class="footer-links">
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="{% url 'home' %}#process">How we work</a></li>
+            <li><a href="{% url 'home' %}#reviews">Reviews</a></li>
+            <li><a href="{% url 'quote' %}">Request a consultation</a></li>
+            <li><a href="{% url 'contact' %}">Contact &amp; directions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio hours</h3>
+            <ul class="footer-hours" data-hours>
+              <li data-day="1"><span>Monday</span><span>7:30 &ndash; 5:30</span></li>
+              <li data-day="2"><span>Tuesday</span><span>7:30 &ndash; 5:30</span></li>
+              <li data-day="3"><span>Wednesday</span><span>7:30 &ndash; 5:30</span></li>
+              <li data-day="4"><span>Thursday</span><span>7:30 &ndash; 5:30</span></li>
+              <li data-day="5"><span>Friday</span><span>7:30 &ndash; 4:30</span></li>
+              <li data-day="6"><span>Saturday</span><span>9:00 &ndash; 1:00</span></li>
+              <li data-day="0"><span>Sunday</span><span>Closed</span></li>
+            </ul>
+          <p class="open-status" data-open-status><i aria-hidden="true"></i><span>Studio phone line: Mon&ndash;Sat</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2025</span> Fernhill Landscapes. 48 Orchard Lane, Ashbury &middot; <a href="tel:+15035550142">(503) 555-0142</a> &middot; <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>Template by <a href="https://uicookies.com/">uiCookies</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/vendor/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
+
